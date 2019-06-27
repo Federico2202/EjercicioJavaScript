@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+
+    <script>
+        var peso =  prompt("Digite el peso en Kg");
+        var estatura = prompt("Digite la estatura en Mt")
+        var IMC = peso/(estatura*estatura);
+
+        document.writeln("<p> Su peso es de :</p>" + peso )
+        document.writeln("<p> Su altura es de :</p>" + estatura)
+        document.writeln("<p> Su IMC es de :</p>" + IMC );
+        
+        if(IMC<=18.5){
+            document.write("Usted esta en bajo peso");
+        }else if(IMC=18.5 && IMC<=24.9) {
+            document.write("Usted tiene un peso Normal")
+        }else if(IMC=25 && IMC<=29.9){
+            document.write("Usted tiene sobrepeso")
+        }else if(IMC=30 && IMC<=34.9){
+            document.write("Usted tiene obesidad tipo I")
+        }else if(IMC35 && IMC<=39.9){
+            document.write("Usted tiene obesidad tipo II")
+        }else if(IMC=40 && IMC<49.9){
+            document.write("Usted tiene obesidad tipo III")
+        }else if(IMC>50){
+            document.write("Usted tiene obesidad tipo V")
+        }
+
+
+
+
+    </script>
+</body>
+</html>
